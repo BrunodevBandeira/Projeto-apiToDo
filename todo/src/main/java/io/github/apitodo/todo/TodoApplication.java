@@ -20,6 +20,8 @@ private TodoRepository todoRepository;
 @Bean
 public CommandLineRunner init(){
 	return new CommandLineRunner(){
+		//Inicia o código quando a aplicação é iniciado
+		//O CommandLineRunner requer a implementação de um método (run) que recebe por parâmetro uma matriz de String.
 		@Override
 		public void run(String...args) throws Exception {
 			Todo todo = new Todo();
